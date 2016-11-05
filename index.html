@@ -1,0 +1,151 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/partyStyle.css"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    </head>
+     <body>
+
+<nav id="wrapper">
+
+            <div class="row"><!-- start of the menu row-->
+
+              <div class="col1of6 large-2 small-12">
+                <div class="logo">
+                  <img src="images/teddybear.jpg">
+                </div>
+              </div>
+
+              <div class="col2of6 large-2 small-12">
+                <a href="index.html">
+                    <div class="button-text1">Home</div>
+                    <div class="button1"></div>
+                </a>
+             </div>
+
+
+            <div class="col3of6 large-2 small-12">
+              <a href="servicessupplies.html">
+                <div class="button-text2">Services</div>
+                <div class="button2"></div>
+              </a>
+            </div>
+
+            <div class="col4of6 large-2 small-12">
+              <a href="rentals.html">
+                <div class="button-text3">Rentals</div>
+                <div class="button3"></div>
+              </a>
+            </div>
+            <div class="col5of6 large-2 small-12">
+              <a href="consultations.html">
+                <div class="button-text4">Consult</div>
+                <div class="button4"></div>
+              </a>
+            </div>
+
+            <div class="col6of6 large-2 small-12">
+              <a href="contact.html">
+                <div class="button-text5">Contact</div>
+                <div class="button5"></div>
+              </a>
+            </div>
+          </div><!-- end of the menu row-->
+
+  </nav>
+
+    <div class="row" id="content"> <!-- start of the .......row  -->
+      <div class="medium-8 columns">
+        <div class="blog-post">
+            <div id="content">
+                <div id="pageContent"> </div>
+
+           <h1 class="small-6 large-centered columns">Party Time of Hayward</h1>
+
+          <!--<div class="w3-content w3-section" style="max-width:600px">-->
+
+         <div class="small-12 large-6 large-centered columns">
+
+
+                  <img class="mySlides" src="images/image1.jpg" >
+                  <img class="mySlides" src="images/image2.jpg" >
+                  <img class="mySlides" src="images/image3.jpg" >
+                  <img class="mySlides" src="images/image4.jpg" >
+                  <img class="mySlides" src="images/image5.jpg" >
+          </div>
+          <p>Family owned and operated for over 21 years. If you are planning a wedding reception, birthday party, anniversary, baby shower, bridal shower, company event, school event or any special occasion, Party Time Party Supplies and Rentals is here to help!</p>
+            </div>
+
+</div>
+
+ <footer id="footer">
+     <p>&copy;2016 Party Time Party Supplies and Rentals
+     <br> Phone: <a href="tel:510-538-2164">510-538-2164</a>
+     <br>
+     <div class="fb-page" data-href="https://www.facebook.com/PartyTimePartySupplies" data-tabs="timeline" data-width="180" data-height="70" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/PartyTimePartySupplies" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/PartyTimePartySupplies">Party Time Party Supplies</a></blockquote></div>
+     <a href="https://twitter.com/PartyTimeStore" class="twitter-follow-button" data-show-count="false">Follow @PartyTimeStore</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+     <br>
+     22257 Mission Blvd., Hayward, CA.</p>
+ </footer>
+
+       <script>
+       //copied from ......http://......
+       var myIndex = 0;
+       carousel();
+
+       function carousel() {
+           var i;
+           var x = document.getElementsByClassName("mySlides");
+           for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+           }
+           myIndex++;
+           if (myIndex > x.length) {myIndex = 1}
+           x[myIndex-1].style.display = "block";
+           setTimeout(carousel, 3000); // Change image every 3 seconds
+       }
+       </script>
+
+
+
+      <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+       showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+       showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+       var i;
+       var slides = document.getElementsByClassName("mySlides");
+       var dots = document.getElementsByClassName("dot");
+       if (n > slides.length) {slideIndex = 1}
+       if (n < 1) {slideIndex = slides.length}
+       for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";
+       }
+       for (i = 0; i < dots.length; i++) {
+           dots[i].className = dots[i].className.replace(" active", "");
+       }
+       slides[slideIndex-1].style.display = "block";
+       dots[slideIndex-1].className += " active";
+      }
+      </script>
+     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    </body>
+
+
+</html>
